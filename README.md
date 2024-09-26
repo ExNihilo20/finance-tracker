@@ -11,6 +11,10 @@ This Financial Tracker App is a desktop application built with Python that allow
 - Generate basic financial reports
 - Local data storage using SQLite
 
+## Database
+
+The application uses **SQLite** as its database, with **SQLAlchemy** as the ORM (Object-Relational Mapping) tool to facilitate interactions with the database. SQLAlchemy provides a high-level API for managing database operations and relationships between models.
+
 ## Installation
 
 ### Prerequisites
@@ -34,6 +38,7 @@ python -m venv .venv
 - On Windows:
   ```
   .venv\Scripts\activate
+  (if using powershell:> .venv\Scripts\Activate.ps1)
   ```
 - On macOS and Linux:
   ```
@@ -62,6 +67,7 @@ python main.py
 The app uses SQLite with the following main tables:
 - `users`: Stores user account information
 - `transactions`: Records all financial transactions
+- `catetories`: Records the various categories of transactions
 
 ## Contributing
 Contributions to improve the Financial Tracker App are welcome. Please follow these steps:
